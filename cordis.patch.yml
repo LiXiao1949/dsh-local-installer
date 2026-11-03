@@ -1,0 +1,11 @@
+# Patch layer for @local/dsh-local-install.
+# Project : dsh-local-installer
+# Author  : LiXiao1949  (https://github.com/LiXiao1949)
+# QQ      : 1640444672
+#
+# The host half registers the HTTP routes the browser page talks to; the client
+# half is discovered through this package's `dsh.client` declaration and served
+# at /plugins/@local/dsh-local-install/client.js.
+- insert:
+    - id: dsh-local-install
+      name: '@local/dsh-local-install'
